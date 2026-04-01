@@ -3,6 +3,7 @@ import Banner from './components/Banner'
 import MeetTheTeam from './components/MeetTheTeam'
 import Navbar from './components/Navbar'
 import Performance from './components/Performance'
+import Pricing from './components/Pricing'
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
 
 
     <MeetTheTeam />
+    <Pricing />
 
 
     </>

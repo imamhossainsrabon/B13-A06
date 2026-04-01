@@ -2,8 +2,8 @@ import user from  '../assets/user.png'
 
 const MeetTheTeam = () => {
     return (
-        <div className="py-30 px-3 bg-[#f2f2f2]" >
-            <div className="max-w-[1200px] mx-auto ">
+        <div className="md:py-30 py-15 px-3 bg-[#f2f2f2]" >
+            <div className="max-w-[1200px] mx-auto">
                 <h2 className='mb-4 text-[#101727] text-[32px] md:text-[48px] leading-[120%] font-extrabold text-center'>Get Started in 3 Steps</h2>
                 <p className='mb-10 text-[#627382] md:text-[16px] text-[12px] leading-[140%] text-center '>Start using premium digital tools in minutes, not hours.</p>
                 <div className='flex flex-col md:flex-row justify-between items-center gap-8' >
