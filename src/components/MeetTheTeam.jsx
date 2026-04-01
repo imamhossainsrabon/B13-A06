@@ -1,4 +1,6 @@
 import user from  '../assets/user.png'
+import packaage from  '../assets/package.png'
+import rocket from  '../assets/rocket.png'
 
 const MeetTheTeam = () => {
     return (
@@ -17,22 +19,22 @@ const MeetTheTeam = () => {
                         <p className='text-[#627382] text-[16px] text-cente pb-16  '>Sign up for free in seconds. No credit card required to get started.</p>
                     </div>
                     <div className='bg-white p-6  rounded-2xl flex justify-between items-center gap-4 flex-col text-center'>
-                        <div className='flex justify-end w-full'><p className='justify-items-end bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-bold px-3 py-2 rounded-full'>01</p></div>
+                        <div className='flex justify-end w-full'><p className='justify-items-end bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-bold px-3 py-2 rounded-full'>02</p></div>
                         
 
-                        <img className='bg-linear-to-r from-[#4F39F61a] to-[#9514FA1a] bg-base-200-10 p-5 rounded-full'  src={user} />
+                        <img className='bg-linear-to-r from-[#4F39F61a] to-[#9514FA1a] bg-base-200-10 p-5 rounded-full'  src={packaage} />
                         
-                        <h3 className='text-[#101727] font-bold text-2xl text-center'>Create Account</h3>
-                        <p className='text-[#627382] text-[16px] text-cente pb-16  '>Sign up for free in seconds. No credit card required to get started.</p>
+                        <h3 className='text-[#101727] font-bold text-2xl text-center'>Choose Products</h3>
+                        <p className='text-[#627382] text-[16px] text-cente pb-16  '>Browse our catalog and select the tools that fit your needs.</p>
                     </div>
                     <div className='bg-white p-6  rounded-2xl flex justify-between items-center gap-4 flex-col text-center'>
-                        <div className='flex justify-end w-full'><p className='justify-items-end bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-bold px-3 py-2 rounded-full'>01</p></div>
+                        <div className='flex justify-end w-full'><p className='justify-items-end bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-bold px-3 py-2 rounded-full'>03</p></div>
                         
 
-                        <img className='bg-linear-to-r from-[#4F39F61a] to-[#9514FA1a] bg-base-200-10 p-5 rounded-full'  src={user} />
+                        <img className='bg-linear-to-r from-[#4F39F61a] to-[#9514FA1a] bg-base-200-10 p-5 rounded-full'  src={rocket} />
                         
-                        <h3 className='text-[#101727] font-bold text-2xl text-center'>Create Account</h3>
-                        <p className='text-[#627382] text-[16px] text-cente pb-16  '>Sign up for free in seconds. No credit card required to get started.</p>
+                        <h3 className='text-[#101727] font-bold text-2xl text-center'>Start Creating</h3>
+                        <p className='text-[#627382] text-[16px] text-cente pb-16  '>Download and start using your premium tools immediately.</p>
                     </div>
                     
                 </div>

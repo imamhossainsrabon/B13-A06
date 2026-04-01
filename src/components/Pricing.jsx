@@ -22,6 +22,7 @@ const Pricing = () => {
                             <button className='pricing-btn-1'>Get Started Free</button>
                         </div>
                         <div className='pricing-card-2'>
+                            <h6>Most Popular</h6>
                             <h3>Pro</h3>
                             <p>Best for professionals</p>
                             <h4><span>$29</span>/month</h4>
