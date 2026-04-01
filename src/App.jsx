@@ -6,8 +6,18 @@ import MeetTheTeam from './components/MeetTheTeam'
 import Navbar from './components/Navbar'
 import Performance from './components/Performance'
 import Pricing from './components/Pricing'
+import Products from './components/Products'
+
+
+const loadData = async ()=> {
+  const res = await fetch("/Data.json")
+  return res.json()
+}
+
+const data = loadData()
 
 function App() {
+
   
   return (
     <>
@@ -16,6 +26,7 @@ function App() {
     <Banner />
     <Performance />
 
+    <Products sendData={data} />
 
     <MeetTheTeam />
     <Pricing />
