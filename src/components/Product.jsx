@@ -1,7 +1,19 @@
-const Product = ({ product }) => {
-  console.log(product);
+import { toast } from "react-toastify";
+
+const Product = ({ product, cart, setCart }) => {
+  
+  function handleBuyButton(){
+    const isFound = cart.find(item=> item.id === product.id)
+    if(isFound){
+      toast.error('Item already Added to Cart')
+      return
+    }
+    setCart([...cart, product])
+    toast.success('Product Added to cart')
+    console.log(cart)
+  }
   return (
-    <div className="border-[2px] border-solid border-[#F2F2F2] rounded-[16px] p-[24px] space-y-6 relative">
+    <div  className="border-[2px] border-solid border-[#F2F2F2] rounded-[16px] p-[24px] space-y-6 relative">
       <div>
         <img className="w-[60px]" src={product.icon} />
       </div>
@@ -18,13 +30,13 @@ const Product = ({ product }) => {
         /{product.period === "monthly" ? "mo" : "One-Time"}
       </h2>
       <ul>
-        {product.features.map((li) => (
-          <li className="text-slate-500 font-medium text-base leading-[125%] mb-2">
+        {product.features.map((li, index) => (
+          <li key={index} className="text-slate-500 font-medium text-base leading-[125%] mb-2">
             <i className="fa-solid fa-check text-[#30B868]"></i> {li}
           </li>
         ))}
       </ul>
-      <button className=" w-full p-[15px] bg-[linear-gradient(to_right,_#4F39F6,_#9514FA)] font-bold text-[#fff] cursor-pointer rounded-[100px] active:scale-99">
+      <button onClick={handleBuyButton} className=" w-full p-[15px] bg-[linear-gradient(to_right,_#4F39F6,_#9514FA)] font-bold text-[#fff] cursor-pointer rounded-[100px] active:scale-99">
         Buy Now
       </button>
       <div

@@ -1,3 +1,5 @@
+
+import { useState } from 'react'
 import './App.css'
 import Banner from './components/Banner'
 import CallToAction from './components/CallToAction'
@@ -9,6 +11,7 @@ import Pricing from './components/Pricing'
 import Products from './components/Products'
 
 
+
 const loadData = async ()=> {
   const res = await fetch("/Data.json")
   return res.json()
@@ -18,15 +21,15 @@ const data = loadData()
 
 function App() {
 
-  
+  const [cart, setCart] = useState([])
   return (
     <>
 
-    <Navbar />
+    <Navbar cart={cart} />
     <Banner />
     <Performance />
 
-    <Products sendData={data} />
+    <Products cart={cart} setCart={setCart} sendData={data} />
 
     <MeetTheTeam />
     <Pricing />
